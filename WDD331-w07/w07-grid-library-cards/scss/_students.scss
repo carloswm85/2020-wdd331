@@ -1,77 +1,75 @@
 /* STUDENT'S CODE */
-body {
-    display: flex;
-    justify-content: center;
-}
-
-.card {
-    background-color: tomato;
-    border: 3px red solid;
-}
-
-.img-card {
-    height: $card-height * 0.8;
-    width: $card-width * 0.8;
-}
-
 .row {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    align-content: space-between;
+    width: 100%;
     height: 100%;
+	display: grid;
+	grid-template-columns: $column-icon repeat(3, 1fr) $column-icon;
+    align-items: center;
+    justify-content: center;
+	border: 3px solid blue;
+	color: blue;
+	font-weight: 800;
+    fill: blue;
+    border-radius: 10px;
 }
 
-.cell {
-    flex: 1;
-    text-align: center;
-    // background-color: burlywood;
+.card-deck {
+	display: flex;
+	margin: 2em;
 }
 
-// Simple Column Classes
-// .col-1 {
-//     flex: 0 0 12.5%;
-//     // flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-// }
-
-// .col-2 {
-//     flex: 0 0 25%;
-// }
-
-// .col-8 {
-//     flex: 0 0 100%;
-// }
-
-// .offset-2 {
-//     margin-left: 25%;
-// }
-
-// .offset-1 {
-//     margin-left: 12.5%;
-// }              
-
-/* MIXINS */
-// For column classes
-@mixin col($span-num) {
-    flex: 0 0 $one-column * $span-num;
+.card-img {
+	margin-left: 1em;
 }
 
-// For offset classes
-@mixin offset($offset-num) {
-    margin-left: $one-column * $offset-num;
+.item-a {
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: flex-start;
 }
 
-/* LOOPS */
-// For column classes
-@for $index from $loop-start to $loop-end {
-    .col-#{$index} {
-        @include col($index);
+.item-b {
+    grid-area: 4 / 5 / 5 / 6;
+    align-self: flex-end;
+}
+
+.item-1 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.item-2 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.item-3 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.item-4 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.item-5 {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.item-6 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.item-7 {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+@for $index from 1 to 8 {
+    .item-#{$index} {
+        justify-self: center;
+        align-self: center;
     }
 }
+// grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
 
-// For offset classes
-@for $index from $loop-start to $loop-end {
-    .offset-#{$index} {
-        @include offset($index);
-    }
-}
+// /* MIXINS */
+// // For column classes
+// @mixin col($span-num) {
+//     flex: 0 0 $one-column * $span-num;
+// }
