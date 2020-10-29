@@ -1,0 +1,18 @@
+.pacman {
+	width: 0;
+	height: 0;
+
+	border-top: 60px solid yellow;
+	border-left: 60px solid yellow;
+	border-bottom: 60px solid yellow;
+	border-right: 60px solid transparent;
+
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+
+body {
+	background-color: black;
+}
