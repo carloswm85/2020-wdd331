@@ -1,0 +1,66 @@
+/* 	HADER */
+.site-banner {
+	display: grid;
+	grid-template-columns: 2em 1fr 5em;
+	grid-template-rows: 1fr;
+	font-size: 2.5em;
+	background-color: $link-blue;
+	
+	.site-banner__left {
+		grid-area: 2 / 1 / 3 / 2;
+		background-color: $brand-color-2;
+		font-size: 0.8em;
+		padding: 0.1em 0.3em;
+		h1 {
+			display: none;
+		}		
+	}
+
+	.site-banner__right {
+		grid-area: 2 / 2 / 3 / 4;
+		justify-self: right;
+		background-color: $link-blue;
+		font-size: 0.8em;
+		padding: 0.1em 0.3em;
+	}
+
+	form {
+		display: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+/* MAIN */
+main {
+	margin: 0.6em;
+	.site-title {
+		border: 1px solid $brand-color-1;
+		font-weight: lighter;
+		
+	}
+
+	.announcement-text {
+
+	}
+
+	.announcement-picture {
+
+	}
+}
+
+/* Card Gallery */
+.card-container {
+	display: flex;
+	flex-direction: column;
+
+	.card-item {
+		display: block;
+		background-color: yellow;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+}
