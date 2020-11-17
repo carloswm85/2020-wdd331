@@ -1,145 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Brigham Young University - Idaho</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
 
-  <body>
-    <!-- 1/3 -->
-    <header>
-      <div class="site-banner white-text">
+<head>
+  <meta charset="utf-8" />
+  <title>Brigham Young University - Idaho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
 
-        <!-- A: Logo -->
-        <div class="site-banner__left">
-          <a href="#"
-            ><span aria-hidden="true" class="icon-byui-logo">
-              <span class="sr-only">Link to BYU-Idaho home page</span>
-            </span></a
-          >
-          <h1>Home</h1>
+<body>
+  <!-- 1/3 -->
+  <header>
+    <div class="site-banner white-text">
+
+      <!-- A: Logo -->
+      <div class="site-banner__left">
+        <a href="#"><span aria-hidden="divue" class="icon-byui-logo">
+            <span class="sr-only">Link to BYU-Idaho home page</span>
+          </span></a>
+        <h1>Home</h1>
+      </div>
+
+      <!-- B: Menu, Sign In -->
+      <div class="site-banner__right">
+        <a href="http://www.byui.edu/#">
+          <span class="icon-magnifying-glass text-white mobile-header-icon">
+            <span class="sr-only">Search BYU-I</span>
+          </span>
+        </a>
+        <a href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f">
+          <span class="icon-user text-white mobile-header-icon">
+            <span class="sr-only">Login</span>
+          </span>
+        </a>
+        <a href="http://www.byui.edu/#">
+          <span class="icon-menu text-white mobile-header-icon">
+            <span class="sr-only">Expand Menu</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- C: Search -->
+      <form aria-label="Search byui.edu" method="get" action="https://www.byui.edu/search/result?" role="search">
+        <div>
+          <label for="searchDesktop" class="sr-only">Search BYU-I websites:
+          </label>
+          <input id="searchDesktop" name="q" placeholder="Powered by Google" alt="Search BYU-I websites (powered by Google.com)." type="text" />
+
+          <button type="submit">
+            <span aria-hidden="divue" class="icon icon-magnifying-glass ">
+              <span class="sr-only">Submit</span>
+            </span>
+          </button>
         </div>
+      </form>
+    </div>
+  </header>
 
-        <!-- B: Menu, Sign In -->
-        <div class="site-banner__right">
-          <a href="http://www.byui.edu/#">
-            <span class="icon-magnifying-glass text-white mobile-header-icon">
-              <span class="sr-only">Search BYU-I</span>
-            </span>
-          </a>
-          <a
-            href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
-          >
-            <span class="icon-user text-white mobile-header-icon">
-              <span class="sr-only">Login</span>
-            </span>
-          </a>
-          <a href="http://www.byui.edu/#">
-            <span class="icon-menu text-white mobile-header-icon">
-              <span class="sr-only">Expand Menu</span>
-            </span>
-          </a>
+  <!-- 2/3 -->
+  <main>
+    <!-- TITLE -->
+    <div class="site-title">
+      <h1>Brigham Young University - Idaho</h1>
+    </div>
+
+    <!-- ANNOUNCEMENT -->
+    <div class="announcement-text">
+      <h2>Latest COVID-19 Information</h2>
+      <button class="button-blue">COVID-19 Updates</button>
+    </div>
+
+    <!-- PICTURE ANNOUNCEMENT -->
+    <picture>
+      <img class="announcement-picture" src="01-small.jpg" alt="We believe in Jesus Christ.">
+    </picture>
+
+    <!-- CARD CONTAINER -->
+    <div class="card-container">
+
+      <!-- Card #1 -->
+      <a href="#" class="card-item">
+        <picture>
+          <img src="02-small.jpg" alt="BYU video">
+        </picture>
+
+        <div href="#">
+          <span class="content">Campus videos</span>
+          <span aria-hidden="divue" class="icon-floating-right  icon-angle-right">
+            <span class="sr-only">Arrow link</span>
+          </span>
         </div>
+      </a>
 
-        <!-- C: Search -->
-        <form
-          aria-label="Search byui.edu"
-          method="get"
-          action="https://www.byui.edu/search/result?"
-          role="search"
-        >
-          <div>
-            <label for="searchDesktop" class="sr-only"
-              >Search BYU-I websites:
-            </label>
-            <input
-              id="searchDesktop"
-              name="q"
-              placeholder="Powered by Google"
-              alt="Search BYU-I websites (powered by Google.com)."
-              type="text"
-            />
+      <!-- Card #2 -->
+      <a href="#" class="card-item">
+        <picture>
+          <img src="03-small-large.jpg" alt="BYU video">
+        </picture>
 
-            <button type="submit">
-              <span aria-hidden="true" class="icon icon-magnifying-glass ">
-                <span class="sr-only">Submit</span>
-              </span>
-            </button>
-          </div>
-        </form>
+        <div href="#">
+          <span class="content">Photo Gallery</span>
+          <span aria-hidden="divue" class="icon-floating-right icon-angle-right">
+            <span class="sr-only">Arrow link</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Card #3 -->
+      <a href="#" class="card-item">
+        <picture>
+          <img src="04-small-large.jpg" alt="BYU video">
+        </picture>
+
+        <div href="#">
+          <span class="content">Explore Campus</span>
+          <span aria-hidden="divue" class="icon-floating-right icon-angle-right">
+            <span class="sr-only">Arrow link</span>
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <!-- INFORMATION LINKS -->
+    <div href="#" class="get-info card-item">
+      <span class="info-content">GET INFORMATION FOR:</span>
+      <span aria-hidden="divue" class="icon-diviangle-down">
+        <span class="sr-only">Arrow link</span>
+      </span>
+    </div>
+
+    <!-- RESOURCES LINKS -->
+    <div class="resources-container">
+      <h2 class="resources-title">Resources</h2>
+
+      <ul>
+        <!-- 01 -->
+        <li class="resource-link">
+          <a href="#">
+            <span class="content">Explore Campus</span>
+            <span aria-hidden="divue" class="icon-floating-right icon-angle-right">
+              <span class="sr-only">Arrow link</span>
+            </span>
+          </a>
+        </li>
+
+        <!-- 02 -->
+        <li class="resource-link">
+          <a href="#">
+            <span class="content">Financial Aid</span>
+            <span aria-hidden="divue" class="icon-floating-right icon-angle-right">
+              <span class="sr-only">Arrow link</span>
+            </span>
+          </a>
+        </li>
+
+        <!-- 03 -->
+        <li class="resource-link">
+          <a href="#">
+            <span class="content">Degrees and Programs</span>
+            <span aria-hidden="divue" class="icon-floating-right icon-angle-right">
+              <span class="sr-only">Arrow link</span>
+            </span>
+          </a>
+        </li>
+
+        <!-- 04 -->
+        <li class="resource-link">
+          <a href="#">
+            <span class="content">Student Housing</span>
+            <span aria-hidden="divue" class="icon-floating-right icon-angle-right">
+              <span class="sr-only">Arrow link</span>
+            </span>
+          </a>
+        </li>
+
+        <!-- 05 -->
+        <li class="resource-link">
+          <a href="#">
+            <span class="content">Tuition and Fees</span>
+            <span aria-hidden="divue" class="icon-floating-right icon-angle-right">
+              <span class="sr-only">Arrow link</span>
+            </span>
+          </a>
+        </li>
+
+        <!-- 06 -->
+        <li class="resource-link">
+          <a href="#">
+            <span class="content">Academic Deadlines</span>
+            <span aria-hidden="divue" class="icon-floating-right icon-angle-right">
+              <span class="sr-only">Arrow link</span>
+            </span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- DATES LINKS -->
+    <div class="dates-container">
+      <h2 class="resources-title dates-title">Important Dates</h2>
+
+      <ul class="dates-list">
+
+        <!-- 01 -->
+        <li class="dates-link">
+          <a href="#" class="row">
+            <span class="date-bold">Nov 17</span>
+            <span class="date-center">-</span>
+            <span>Devotional - Kristen Glenn</span>
+          </a>
+        </li>
+
+        <!-- 02 -->
+        <li class="dates-link">
+          <a href="#" class="row">
+            <span class="date-bold">Nov 19</span>
+            <span class="date-center">-</span>
+            <span>Symphony Orchestra Livestream</span>
+          </a>
+        </li>
+
+        <!-- 03 -->
+        <li class="dates-link">
+          <a href="#" class="row">
+            <span class="date-bold">Nov 24</span>
+            <span class="date-center">-</span>
+            <span>Devotional - Randy Beard</span>
+          </a>
+        </li>
+
+        <!-- 04 -->
+        <li class="dates-link">
+          <a href="#" class="row">
+            <span class="date-bold">Nov 25</span>
+            <span class="date-center">-</span>
+            <span>A Campus Thanksgiving</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ARTICLE NEWS -->
+    <div class="article-container">
+      <h2 class="title-hidden">Articles</h2>
+
+      <!-- 01 -->
+      <div class="article-item">
+        <span class="article-date">October 23, 2020</span>
+        <h3 class="article-title">
+          <a href="#">BYU-Idaho Releases Fall 2020 Enrollment</a>
+        </h3>
+        <p class="article-content">Enrollment of both campus-based and online students grows for Fall 2020.</p>
       </div>
-    </header>
 
-
-    <!-- 2/3 -->
-    <main>
-      <div class="site-title">
-        <h1>Brigham Young University - Idaho</h1>
+      <!-- 02 -->
+      <div class="article-item">
+        <span class="article-date">October 8, 2020</span>
+        <h3 class="article-title">
+          <a href="#">BYU-Idaho Department of Music Announces a Call for Hymn Texts</a>
+        </h3>
+        <p class="article-content">BYU-Idaho Music Department prepares for 2021 BYU-Idaho Hymn Festival</p>
       </div>
 
-      <div class="announcement-text">
-        <h2>Latest COVID-19 Information</h2>
-        <button>COVID-19 Updates</button>
+      <!-- 03 -->
+      <div class="article-item">
+        <span class="article-date">October 5, 2020</span>
+        <h3 class="article-title">
+          <a href="#">COVID-19: Steps for Staying Safe at BYU-Idaho</a>
+        </h3>
+        <p class="article-content">What to do if you contract COVID-19.</p>
       </div>
 
-      <picture class="announcement-picture">
-        <img src="01-small.jpg" alt="We believe in Jesus Christ.">
+      <button class="button-blue button-newsroom">Newsroom</button>
+    </div>
+
+    <!-- BOTTOM CARD CONTAINER -->
+    <div href="#" class="bottom-card-item">
+
+      <!-- Picture -->
+      <picture>
+        <img src="05-small.jpg" alt="BYU video">
       </picture>
 
-      <div class="card-container">
-
-        <a class="card-item">
-          <picture>
-            <img src="02-small.jpg" alt="BYU video">
-          </picture>
-
-          <div href="#">
-            <span class="content">Campus videos</span>
-            <span aria-hidden="true" class="icon-angle-right">
-              <span class="sr-only">Arrow link</span>
-            </span>
-          </div>
-        </a>
-
-        <a class="card-item">
-          <picture>
-            <img src="03-small-large.jpg" alt="BYU video">
-          </picture>
-
-          <div href="#">
-            <span class="content">Photo Gallery</span>
-            <span aria-hidden="true" class="icon-angle-right">
-              <span class="sr-only">Arrow link</span>
-            </span>
-          </div>
-        </a>
-
-        <a class="card-item">
-          <picture>
-            <img src="04-small-large.jpg" alt="BYU video">
-          </picture>
-
-          <div href="#">
-            <span class="content">Explore Campus</span>
-            <span aria-hidden="true" class="icon-angle-right">
-              <span class="sr-only">Arrow link</span>
-            </span>
-          </div>
-        </a>  
-
-          
+      <!-- Card content -->
+      <div class="bottom-card-content">
+        <h2 class="title-hidden">Learn More</h2>
+        <h3>High-Value Education</h3>
+        <p>At BYU-Idaho you can receive a high-quality education for a low cost.</p>
+        <button class="button-blue">Learn More</button>
       </div>
+    </div>
+
+    <div class="site-title"></div>
+  </main> <!-- END MAIN -->
 
 
+  <!-- 3/3 -->
+  <footer>
 
-    </main>
+  </footer>
+</body>
 
-
-    <!-- 3/3 -->
-    <footer>
-
-    </footer>
-  </body>
 </html>

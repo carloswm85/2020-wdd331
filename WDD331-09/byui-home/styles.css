@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "BYUI Open Sans";
+  font-family: "BYUI Open Sans Light";
   font-style: normal;
   font-weight: 300;
   src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTQzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
@@ -1373,12 +1373,60 @@ template {
 
 /* MAIN */
 main {
-  margin: 0.6em;
+  padding: 0 0.6em;
 }
-main .site-title {
-  border: 1px solid #006eb6;
-  font-weight: lighter;
+
+.title-hidden {
+  display: none;
 }
+
+.site-title {
+  padding: 0.5em;
+  margin: 0 -0.6em 2.5em -0.6em;
+  border-bottom: 1px solid #727272;
+  text-align: center;
+  background-color: #eaeaea;
+}
+.site-title h1 {
+  font-family: "BYUI Open Sans Light", sans-serif;
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
+.announcement-text {
+  margin: 1.5em 0;
+  padding: 0.8em;
+  text-align: center;
+  background-color: #020202;
+  color: #eaeaea;
+}
+.announcement-text h2 {
+  font-family: "BYUI Open Sans Light", sans-serif;
+  font-weight: 100;
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+
+.button-blue {
+  border-style: none;
+  width: 12em;
+  height: 2.5em;
+  border-radius: 0.2em;
+  background-color: #056cb6;
+  color: #eaeaea;
+  font-weight: 700;
+}
+
+.button-newsroom {
+  width: 8.1em;
+  height: 2.1em;
+  float: right;
+}
+
+.announcement-picture {
+  padding: 1em 0 2.5em 0;
+}
+
 /* Card Gallery */
 .card-container {
   display: flex;
@@ -1386,23 +1434,150 @@ main .site-title {
 }
 .card-container .card-item {
   display: block;
-  background-color: yellow;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: 0 0 2.5em 0;
+  border: 1px solid #b4b3b5;
 }
 
-header {
-  border: 1px dashed blue;
+.content {
+  display: inline-block;
+  margin: 0.4em 0 0.4em 0.5em;
+  font-family: "BYUI Open Sans Light", sans-serif;
+  font-weight: 600;
+  color: #0076b6;
 }
 
-div {
-  border: 2px dashed red;
+.icon-floating-right {
+  float: right;
+  margin: 1.6em 2.5em 0.4em 0;
+  color: #0076b6;
+  font-size: 0.5em;
+}
+
+.get-info {
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px solid #727272;
+  color: #020202;
+  width: 100%;
+  background-color: #eaeaea;
+}
+.get-info .info-content {
+  font-weight: 700;
+}
+.get-info .icon-triangle-down {
+  float: right;
+  margin: 0.3em;
+  font-weight: 100;
+}
+
+.resources-container {
+  margin: 2em 0;
+  border: 1px solid #b4b3b5;
+}
+
+.resources-title {
+  display: block;
+  color: #eaeaea;
+  font-weight: 400;
+  padding: 0.2em 0 0.3em 0.8em;
+  margin: 0;
+  background-color: #727272;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 0.8em;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid #b4b3b5;
+}
+
+li:hover {
+  background-color: #eaeaea;
+}
+
+.dates-title {
+  background-color: #056cb6;
+}
+
+.row {
+  color: #020202;
+  display: grid;
+  grid-template-columns: 3fr 1fr 9fr;
+  padding: 0.5em 0 0.5em 0.6em;
+  font-size: 0.8em;
+}
+.row .date-center {
+  text-align: center;
+}
+.row .date-bold {
+  font-weight: 700;
+}
+
+.dates-link {
+  border-bottom: solid 1px #b4b3b5;
+}
+
+.article-container {
+  margin: 2em 0;
+}
+
+.article-item {
+  padding: 1em 0.5em;
+  border-top: 1px solid #b4b3b5;
+}
+.article-item .article-date {
+  font-weight: 700;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+.article-item .article-title {
+  margin-top: 0.6em;
+  font-size: 1em;
+  font-weight: 600;
+}
+.article-item .article-title a {
+  color: #0076b6;
+}
+.article-item .article-content {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+/* BOTTOM CARD CONTAINER */
+.bottom-card-item {
+  margin: 5em 0;
+  border: 1px solid #b4b3b5;
+  border-radius: 0.5em;
+}
+.bottom-card-item picture img {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.bottom-card-content {
+  margin: 1.5em;
+}
+.bottom-card-content h3 {
+  color: #056cb6;
+}
+.bottom-card-content .button-blue {
+  width: 9em;
 }
 
 body {
   width: 100vw;
   margin: 0;
-  border: 2px dashed green;
+  padding-bottom: 10em;
+}
+
+html {
+  background-color: red;
 }
 
 *,

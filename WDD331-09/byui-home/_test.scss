@@ -1,14 +1,23 @@
 header {
-	border: 1px dashed blue;
+	//border: 1px dashed blue;
 }
 
 
 div {
-	border: 2px dashed red;
+//	border: 2px dashed red;
 }
 
 body {
 	width: 100vw;
 	margin: 0;
-	border: 2px dashed green;
+	//border: 2px dashed green;
+	padding-bottom: 10em;
+	
+}
+
+
+html {
+	background-color: red;
+	
+
 }
