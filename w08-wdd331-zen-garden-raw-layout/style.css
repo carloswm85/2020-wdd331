@@ -1,0 +1,48 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+/* GRID Level 1 */
+.page-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, minmax(100px, auto));
+}
+
+#zen-intro {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 3px dashed red;
+}
+
+#zen-supporting {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 3px dashed blue;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 3px dashed green;
+}
+
+/* GRID Level 1 */
+@media screen and (min-width: 750px) {
+  .page-wrapper {
+    width: 950px;
+    margin: 10px auto;
+  }
+}
+/* basic elements */
+/* specific divs */
+
+/*# sourceMappingURL=style.css.map */

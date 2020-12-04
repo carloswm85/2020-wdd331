@@ -1,0 +1,41 @@
+body {
+// 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000e2b+0,312dff+50,009dff+100 */
+// background: rgb(0,14,43); /* Old browsers */
+// background: -moz-linear-gradient(top, rgba(0,14,43,1) 0%, rgba(49,45,255,1) 50%, rgba(0,157,255,1) 100%); /* FF3.6-15 */
+// background: -webkit-linear-gradient(top, rgba(0,14,43,1) 0%,rgba(49,45,255,1) 50%,rgba(0,157,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+// background: linear-gradient(to bottom, rgba(0,14,43,1) 0%,rgba(49,45,255,1) 50%,rgba(0,157,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000e2b', endColorstr='#009dff',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+/* GRID Level 1 */
+.page-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(auto, minmax(100px, auto));
+}
+
+#zen-intro {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	border: 3px dashed red;
+}
+
+#zen-supporting {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	border: 3px dashed blue;
+}
+
+.sidebar {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	border: 3px dashed green;
+}
