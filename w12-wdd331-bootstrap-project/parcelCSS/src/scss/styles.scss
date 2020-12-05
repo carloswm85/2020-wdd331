@@ -15,5 +15,28 @@ body { background-color: $body-bg-color; }
 .section-light {
   background-color: #eceeef;
   border: red solid 1px;
-  padding: 2em;
+  padding: 2rem;
+}
+
+.section-dark {
+  background-color: #cccccc;
+  padding: 2rem;
+  border: blue solid 1px;
+}
+
+.cool-stuff-wrapper {
+  margin-top: 20px;
+}
+
+button.btn-cool-stuff {
+  background-color: #ff0000;
+  color: #eceeef;
+  display: block;
+  margin: auto;
+  transition: 1.5s;
+}
+
+button.btn-cool-stuff:hover {
+  color: #ffffff;
+  transform: scale(1.3);
 }
