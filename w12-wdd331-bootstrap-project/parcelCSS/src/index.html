@@ -161,6 +161,8 @@
       </div>
     </div> <!-- End S3: images, text and button -->
 
+    <!-- NEXT VIDEO: Number 6 -->
+
   </div> <!-- End MAIN container-fluid -->
 
   <!-- SCRIPTS -->
@@ -169,21 +171,56 @@
   <!-- SECTION 4 -->
   <!-- MODAL SECTION -->
   <!-- btn-cool-stuff's Modal -->
-  <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
+
+        <!-- HEADER -->
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+
+          <!-- Modal title -->
+          <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
+
+          <!-- Close button -->
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
+
+        <!-- BODY -->
         <div class="modal-body">
-          ...
+          
+          <!-- Here comes the custom content of this modal -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <img src="images/KFS_modal.png" alt="KFS logo." class="img-fluid">
+              </div>
+            </div>
+            
+            <!-- Simple form group -->
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="modal-form-wrapper">
+                  <form>
+                    <div class="form-group">
+                      <label for="forName">What's your name</label>
+                      <input type="text" class="form-control" id="formName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="forEmail">Where should we send your cool content?</label>
+                      <input type="text" class="form-control" id="forEmail" placeholder="Email">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div><!-- End form -->
+          </div> <!-- End custom content -->
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
