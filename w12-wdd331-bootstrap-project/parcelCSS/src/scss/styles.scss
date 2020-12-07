@@ -1,14 +1,21 @@
 $fa-font-path:"../../node_modules/font-awesome/fonts";
-@import "node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/font-awesome/scss/font-awesome";
 
 @import 'variables';
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 // @import 'node_modules/bulma/bulma';
 
+/* TEST CODE */
+.border-green { border: 2px green dashed; }
+.border-red { border: 2px red dashed; }
+.border-blue { border: 2px blue dashed; }
+
+/* ACTUAL CODE */
 body {
   background-color: $body-bg-color;
 }
 
+/* SECTION 1 */
 .jumbotron {
   text-align: center;
   background: none;
@@ -16,14 +23,12 @@ body {
 
 .section-light {
   background-color: #eceeef;
-  border: red solid 1px;
   padding: 2rem;
 }
 
 .section-dark {
   background-color: #cccccc;
   padding: 2rem;
-  border: blue solid 1px;
 }
 
 .cool-stuff-wrapper {
@@ -50,3 +55,17 @@ h5.modal-title {
 .modal-form-wrapper {
   padding: 2rem;
 }
+
+/* SECTION 5 */
+.img-center {
+  display: block;
+  margin: auto;
+}
+
+.btn-center {
+  display: block;
+  margin: 0.8em auto 1em auto;
+  width: 95%;
+  max-width: 300px;
+}
+
